@@ -1,0 +1,10 @@
+<launch>
+    <arg name="project" default="vi_slam"/>
+    <!--设置数据集的配置文件，以及工作路径-->
+    <param name="config_file" type="string" value="$(find vi_slam)/config/euroc/euroc_config.yaml" />
+    
+    <node name="$(arg project)_feature_tracker" pkg="$(arg project)" 
+            type="$(arg project)_feature_tracker" output="screen" respawn="true">
+    </node>
+
+</launch>

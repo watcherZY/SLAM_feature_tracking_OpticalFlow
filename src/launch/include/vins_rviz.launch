@@ -1,0 +1,6 @@
+<launch>
+    <arg name="project" default="vi_slam"/>
+
+    <node name="$(arg project)_rviz" pkg="rviz" type="rviz" output="log" 
+            args="-d $(find vi_slam)/launch/include/vins_rviz_config.rviz" />
+</launch>

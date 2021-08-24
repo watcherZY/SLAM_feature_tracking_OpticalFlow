@@ -1,0 +1,6 @@
+<launch>
+    <!--- Run Rviz-->
+    <include file="$(find vi_slam)/launch/include/vins_rviz.launch" />
+    <!--- SLAM -->
+    <include file="$(find vi_slam)/launch/include/euroc.launch" />
+</launch>
